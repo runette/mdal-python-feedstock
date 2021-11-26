@@ -1,5 +1,5 @@
 {% set name = "mdal-python" %}
-{% set version = "1.0.0b2" %}
+{% set version = "1.0.0b4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ViRGIS-Team/mdal-python/archive/refs/tags/{{ version }}.tar.gz
-  sha256: b0d349a6f2fc5a0a59d7b2ff38e1775c69d926cf8b0ebda55631f8b332808ce6
+  sha256: 3271289b7d403d07f1fcc8a3ccf99abe5e82e1df9b27907f856387794f1f5f25
 
 build:
   number: 0
