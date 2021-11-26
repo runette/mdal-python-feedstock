@@ -1,5 +1,5 @@
 {% set name = "mdal-python" %}
-{% set version = "0.9.3" %}
+{% set version = "1.0.0b1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ViRGIS-Team/mdal-python/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 71ffe3f90a4212ba33361e1cb8e7988260f626d1f7722a7bd9b4e3b31428c8b5
+  sha256: 031e0ac39573a1c288a92f82c754eedf13f5b26a852af196a84455d7532aefb2
 
 build:
   number: 1
@@ -27,7 +27,6 @@ requirements:
     - python
     - {{ pin_compatible('numpy') }}
     - mdal
-    - meshio
 
 test:
   commands:
