@@ -1,5 +1,5 @@
 {% set name = "mdal-python" %}
-{% set version = "0.9.3" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/ViRGIS-Team/mdal-python/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 71ffe3f90a4212ba33361e1cb8e7988260f626d1f7722a7bd9b4e3b31428c8b5
+  sha256: 4c66968b899e1cc1049494c84c60d9ebd6508c5b08e7813996b39de36a1f78f8
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
  
 requirements:
@@ -18,7 +18,7 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
-    - mdal
+    - mdal >0.9.0a1
     - numpy
     - scikit-build
     - pip
