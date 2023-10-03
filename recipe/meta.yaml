@@ -16,6 +16,8 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - make  # [not win]
+    - cmake
   host:
     - python
     - mdal
@@ -23,7 +25,6 @@ requirements:
     - scikit-build
     - pip
     - cython
-    - cmake
   run:
     - python
     - {{ pin_compatible('numpy') }}
