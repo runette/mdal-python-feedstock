@@ -18,11 +18,12 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - python
-    - mdal >0.9.0a1
+    - mdal
     - numpy
     - scikit-build
     - pip
     - cython
+    - cmake
   run:
     - python
     - {{ pin_compatible('numpy') }}
