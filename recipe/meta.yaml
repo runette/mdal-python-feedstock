@@ -27,7 +27,7 @@ requirements:
     - pip
     - cython
   run:
-    - python
+    - python >3.8
     - mdal
     - meshio
 
