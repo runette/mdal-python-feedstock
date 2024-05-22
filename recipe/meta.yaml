@@ -20,7 +20,7 @@ requirements:
     - make  # [not win]
     - cmake
   host:
-    - python
+    - python > 3.8
     - mdal
     - numpy
     - scikit-build
