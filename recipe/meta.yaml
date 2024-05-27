@@ -15,19 +15,20 @@ build:
  
 requirements:
   build:
+    skip: True  # [py<39]
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
     - make  # [not win]
     - cmake
   host:
-    - python >3.8
+    - python
     - mdal
     - numpy
     - scikit-build
     - pip
     - cython
   run:
-    - python >3.8
+    - python
     - mdal
     - meshio
 
