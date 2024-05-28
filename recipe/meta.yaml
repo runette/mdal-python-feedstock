@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  git_url: https://github.com/ViRGIS-Team/mdal-python
-  #sha256: c3d84072c80d7d7f8f384539ca7290504b3c499aadba0d5fc1e2ed6eb11ed4ac
+  url: https://github.com/ViRGIS-Team/mdal-python/archive/refs/tags/{{ version }}.tar.gz
+  sha256: 9707bab07452b3a9af45073f72ffe43f8e9ad595e6dd048d8dd388042df9b8a5
   
 build:
   number: 0
