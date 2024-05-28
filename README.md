@@ -160,14 +160,14 @@ Current release info
 Installing mdal-python
 ======================
 
-Installing `mdal-python` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `mdal-python` from the `conda-forge/label/mdal-python_rc` channel can be achieved by adding `conda-forge/label/mdal-python_rc` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/mdal-python_rc
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `mdal-python` can be installed with `conda`:
+Once the `conda-forge/label/mdal-python_rc` channel has been enabled, `mdal-python` can be installed with `conda`:
 
 ```
 conda install mdal-python
@@ -182,26 +182,26 @@ mamba install mdal-python
 It is possible to list all of the versions of `mdal-python` available on your platform with `conda`:
 
 ```
-conda search mdal-python --channel conda-forge
+conda search mdal-python --channel conda-forge/label/mdal-python_rc
 ```
 
 or with `mamba`:
 
 ```
-mamba search mdal-python --channel conda-forge
+mamba search mdal-python --channel conda-forge/label/mdal-python_rc
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search mdal-python --channel conda-forge
+mamba repoquery search mdal-python --channel conda-forge/label/mdal-python_rc
 
 # List packages depending on `mdal-python`:
-mamba repoquery whoneeds mdal-python --channel conda-forge
+mamba repoquery whoneeds mdal-python --channel conda-forge/label/mdal-python_rc
 
 # List dependencies of `mdal-python`:
-mamba repoquery depends mdal-python --channel conda-forge
+mamba repoquery depends mdal-python --channel conda-forge/label/mdal-python_rc
 ```
 
 
