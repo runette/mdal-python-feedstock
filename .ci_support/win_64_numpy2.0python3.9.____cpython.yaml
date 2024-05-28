@@ -3,7 +3,7 @@ c_stdlib:
 channel_sources:
 - conda-forge/label/numpy_rc,conda-forge
 channel_targets:
-- conda-forge main
+- conda-forge mdal-python_rc
 cxx_compiler:
 - vs2019
 numpy:
