@@ -27,6 +27,7 @@ requirements:
     - scikit-build
     - pip
     - cython
+    - setuptools
   run:
     - python
     - mdal
