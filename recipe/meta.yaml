@@ -12,7 +12,7 @@ source:
 build:
   number: 3
   script: "{{ PYTHON }} -m pip install . -vv"
-  skip: True  # [py<39]
+  skip: True  # [py<310]
  
 requirements:
   build:
