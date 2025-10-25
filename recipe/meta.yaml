@@ -20,6 +20,8 @@ requirements:
     - {{ stdlib("c") }}
     - make  # [not win]
     - cmake
+    - python
+    - pip
   host:
     - python
     - mdal
